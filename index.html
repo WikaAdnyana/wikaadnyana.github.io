@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANDI TEBING TEGALLINGGAH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+<script>
+$( function() {
+    $("#dialog1").dialog({
+		autoOpen:false,
+        minWidth: 600,
+		show:'blind',
+		hide:'blind'
+	    });
+	$('#video').click(function(){
+		$('#dialog1').dialog('open');
+		return false;
+	});
+
+    $("#dialog2").dialog({
+		autoOpen:false,
+        minWidth: 650,
+		show:'blind',
+		hide:'blind'
+	    });
+	$('#lokasi').click(function(){
+		$('#dialog2').dialog('open');
+		return false;
+	});
+
+  $("#kotakgeser").sortable();
+	$("#kotakgeser").disableSelection();
+
+} );
+    
+</script>
+</head>
+<Body>
+    <div class="container-fluid">
+    <header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark shadow" aria-label="Main navigation" style="background: linear-gradient(to right, red, yellow);">
+      <div class="container-fluid">
+        <img src="candi.png" alt="" style="width: 30px; margin-right: 10px;">
+        <a class="navbar-brand" href="#" style="color: yellow;">CANDI TEBING TEGALLINGGAH</a>
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ms-auto mb-2 mr-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/home.html">
+                <button type="button" class="btn btn-outline-light">Home</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/objekwisata.html">
+                <button type="button" class="btn btn-outline-light">Objek Wisata</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/sarana.html">
+                <button type="button" class="btn btn-outline-light">Sarana Akomodasi</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/wawasan.html">
+                <button type="button" class="btn btn-outline-light">Wawasan</button></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Cari</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>
+<main>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="color: yellow; text-shadow: 0px 0px 20px #000000;">CANDI TEBING TEGALLINGGAH</h4>
+              <p style="text-shadow: 0px 0px 20px #000000;">Nikmati Perjalanan Wisata Sejarah dengan Pemandangan Alam yang Menawan</p>
+              <button id="video" type="button" class="btn btn-success">Video</button>
+              <button id="lokasi" type="button" class="btn btn-warning">Lokasi</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="color: yellow; text-shadow: 0px 0px 20px #000000;">SPOT FOTO</h4>
+              <p style="text-shadow: 0px 0px 20px #000000;">Nikmati Spot Foto yang Instagramable dan Bertemakan Alam</p>
+              <button id="video" type="button" class="btn btn-success">Video</button>
+              <button id="lokasi" type="button" class="btn btn-warning">Lokasi</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="4.jpg" class="d-block w-100" alt="..." width="100px">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="color: yellow; text-shadow: 0px 0px 20px #000000;">JALUR TRACKING</h4>
+              <p style="text-shadow: 0px 0px 20px #000000;">Nikmati Jalur Perjalanan Yang Hijau Dan Memanjakan Mata</p>
+              <button id="video" type="button" class="btn btn-success">Video</button>
+              <button id="lokasi" type="button" class="btn btn-warning">Lokasi</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+<section>
+    <div id="dialog1" title="VIDEO">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm3kbwDOEN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</section>
+<section>
+    <div id="dialog2" title="LOKASI">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.823456248773!2d115.30365179938997!3d-8.52780110850798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd21690a2ca2f4f%3A0x45bca6214d30c23!2sTegallingah%20Cliff%20Temple!5e0!3m2!1sen!2sid!4v1643207368203!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+</section>
+<br>
+<div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+<div style="background: #ffffff; ">
+<div class="container marketing">
+    <center>
+      <br><h1 style="background-image: linear-gradient(to right, red, red, orange, yellow); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 250px;">
+            NAVIGATION
+        </h1>
+        <hr><br>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img" width="140" height="140" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="f1.png">
+            <h2><br> OBJEK WISATA</h2>
+            <p><a class="btn btn-secondary" href="/uasdesainweb/objekwisata.html" style="background: linear-gradient(to right, red, orange);">GO »</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img" width="140" height="140" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="f2.png">
+            <h2><br> SARANA AKOMODASI</h2>
+            <p><a class="btn btn-secondary" href="/uasdesainweb/sarana.html" style="background: linear-gradient(to right, red, orange);">GO »</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img" width="140" height="140" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="f4.png">
+            <h2><br> WAWASAN</h2>
+            <p><a class="btn btn-secondary" href="/uasdesainweb/wawasan.html" style="background: linear-gradient(to right, red, orange);">GO »</a></p>
+          </div>
+          <hr>
+    </center>
+</div>
+</div>
+</div>
+<br><br>
+<div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+  <div style="background: #ffffff; ">
+<center>
+<br>
+<h1 style="background-image: linear-gradient(to right, red, red, orange, yellow); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 400px; text-align: center;">
+    OBJEK WISATA
+</h1>
+<hr></center>
+<div class="container" style="padding: 30px;">
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-black ">
+            <h4 class="my-0 fw-normal">CANDI</h4>
+          </div>
+          <div class="card-body">
+            <img src="5.jpg" alt="" height="150px">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>CANDI PENUH SEJARAH</li>
+              <li>Kompleks Candi yang diukir </li>
+              <li>langsung diatas tebing batu yang</li>
+              <li>dulu digunakan untuk tempat pertapaan</li>
+            </ul>
+            <a href="/uasdesainweb/objekwisata.html">
+              <button type="button" class="w-100 btn btn-md btn-outline-primary">View Details »</button></a>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-black ">
+            <h4 class="my-0 fw-normal">PANCURAN</h4>
+          </div>
+          <div class="card-body">
+            <img src="6.jpg" alt="" height="150px">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>PANCURAN MATA AIR</li>
+              <li>Terdapat sumber mata air</li>
+              <li>langsung dari celah  tebing</li>
+              <li>yang dipercaya sebagai sumber air suci</li>
+            </ul>
+            <a href="/uasdesainweb/objekwisata.html">
+              <button type="button" class="w-100 btn btn-md btn-outline-primary">View Details »</button></a>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-black ">
+          <h4 class="my-0 fw-normal">ARUNG JERAM</h4>
+        </div>
+        <div class="card-body">
+          <img src="7.jpg" alt="" height="150px">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>WISATA ARUNG JERAM</li>
+            <li>Terdapat wisata arung jeram</li>
+            <li>yang sangat dinikmati wisatawan</li>
+            <li>dengan harga yang terjangkau</li>
+          </ul>
+          <a href="/uasdesainweb/objekwisata.html">
+            <button type="button" class="w-100 btn btn-md btn-outline-primary">View Details »</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<br><br>
+<div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+<div style="background: #ffffff; ">
+<div class="container marketing">
+    <center>
+      <br><h1 style="background-image: linear-gradient(to right, red, red, orange, yellow); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 450px;">
+            SARANA AKOMODASI
+        </h1>
+        <hr><br>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img" width="140" height="140" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="s1.png">
+            <p><a class="btn btn-secondary" href="/uasdesainweb/sarana.html#tabs-1" style="background: linear-gradient(to right, red, orange); margin-top: 15px;"> HOTEL </a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img" width="140" height="140" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="s2.png">
+            <p><a class="btn btn-secondary" href="/uasdesainweb/sarana.html#tabs-2" style="background: linear-gradient(to right, red, orange); margin-top: 15px;">RESTAURANT</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img" width="140" height="140" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="s3.png">
+            <p><a class="btn btn-secondary" href="/uasdesainweb/sarana.html#tabs-3" style="background: linear-gradient(to right, red, orange); margin-top: 15px;">TRANSPORT</a></p>
+          </div>
+          <hr><br>
+    </center>
+</div>
+</div>
+</div>
+
+<br><br>
+<div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+<div style="background: #ffffff;">
+<div class="container" style="background-color: #ffffff;">
+  <center><br><h1 style="background-image: linear-gradient(to right, red, red, orange, yellow); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 450px;">
+    KUNJUNGAN WISATA
+  </h1></center>
+  <hr>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Domestik (90%)</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Inggris (70%)</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Australia (50%)</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Jepang (60%)</div>
+  </div>
+  <br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Amerika (80%)</div>
+  </div>
+  <br>
+</div>
+</div>
+</div>
+
+<br><br>
+<div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+<div style="background: #ffffff;">
+  <div class="container" style="background-color:#ffffff">
+    <center><br><h1 style="background-image: linear-gradient(to right, red, red, orange, yellow); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 450px;">
+      GALERI WISATAWAN
+    </h1></center><hr>
+    <div class="row" id="kotakgeser">
+      <div class="col-md-4">
+        <figure >
+          <img src="g1.jpg" class="img-thumbnail" width="300px" height="300px" style="background: linear-gradient(to right, red, yellow); padding: 5px;">
+          <figcaption>Foto Wisatawan</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="g2.jpg" class="img-thumbnail" width="300px" height="300px" style="background: linear-gradient(to right, red, yellow); padding: 5px;">
+          <figcaption>Foto Wisatawan</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="g3.jfif" class="img-thumbnail" width="300px" height="300px" style="background: linear-gradient(to right, red, yellow); padding: 5px;">
+          <figcaption>Foto Wisatawan</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="g4.jpg" class="img-thumbnail" width="300px" height="300px" style="background: linear-gradient(to right, red, yellow); padding: 5px;">
+          <figcaption>Foto Wisatawan</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="g5.jpg" class="img-thumbnail" width="300px" height="300px" style="background: linear-gradient(to right, red, yellow); padding: 5px;">
+          <figcaption>Foto Wisatawan</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <img src="g6.jpg" class="img-thumbnail" width="300px" height="300px" style="background: linear-gradient(to right, red, yellow); padding: 5px;">
+          <figcaption>Foto Wisatawan</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<br><br>
+<div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+<div style="background: #ffffff;">
+<div class="row" style="background-color:#ffffff">
+    <center><br><h1 style="background-image: linear-gradient(to right, red, red, orange, yellow); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 450px;">
+      CONTACT US
+    </h1></center><hr>
+    <div class="col-md-6">
+      <p style="background-image: linear-gradient(to right, red, red, orange, yellow); -webkit-background-clip: text; -webkit-text-fill-color: transparent; width: 450px;">
+        GOOGLE MAP LOCATION</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1543.4041960709653!2d115.30546044738482!3d-8.528112952591872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd21690a2ca2f4f%3A0x45bca6214d30c23!2sTegallingah%20Cliff%20Temple!5e0!3m2!1sen!2sid!4v1643272508309!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <br><br></div>
+    <div class="col-md-6">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="namadepan" class="form-label">Nama Depan</label>
+          <input type="text" class="form-control" id="namadepan">
+        </div>
+        <div class="col-md-6">
+          <label for="namabelakang" class="form-label">Nama Belakang</label>
+          <input type="text" class="form-control" id="namabelakang">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="notelp" class="form-label">No Telp</label>
+          <input type="text" class="form-control" id="notelp" >
+        </div>
+        <div class="col-12">
+          <label for="alamat" class="form-label">Alamat</label>
+          <input type="text" class="form-control" id="alamat" >
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Provinsi</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Kabupaten</label>
+          <select id="inputState" class="form-select">
+            <option selected>Pilih...</option>
+            <option>Badung</option>
+            <option>Bangli</option>
+            <option>Buleleng</option>
+            <option>Denpasar</option>
+            <option>Gianyar</option>
+            <option>Jembrana</option>
+            <option>Karangasem</option>
+            <option>Klungkung</option>
+            <option>Tabanan</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Kode Pos</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+    </div><br><br>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="background: linear-gradient(to right, red, yellow);">
+  <path fill="#ffffff" fill-opacity="1" d="M0,192L30,176C60,160,120,128,180,138.7C240,149,300,203,360,224C420,245,480,235,540,208C600,181,660,139,720,144C780,149,840,203,900,234.7C960,267,1020,277,1080,250.7C1140,224,1200,160,1260,154.7C1320,149,1380,203,1410,229.3L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+<footer class="py-3" style="background: linear-gradient(to right, red, yellow);">
+<ul class="nav justify-content-center pb-3" style="color: #FFFFFF;">
+  <li class="nav-item"><a href="/uasdesainweb/home.html" class="nav-link px-2" style="color: white;">Home</a></li>
+  <li class="nav-item"><a href="/uasdesainweb/objekwisata.html" class="nav-link px-2" style="color: white;">Objek Wisata</a></li>
+  <li class="nav-item"><a href="/uasdesainweb/sarana.html" class="nav-link px-2" style="color: white;">Sarana Akomodasi</a></li>
+  <li class="nav-item"><a href="/uasdesainweb/wawasan.html" class="nav-link px-2" style="color: white;">Wawasan </a></li>
+</ul>
+<p class="text-center" style="color: white;">Copyright ©2021 Desain Web</p>
+<p class="text-center" style="color: white;">20101157 - I Wayan Wika Adnyana - BE</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
