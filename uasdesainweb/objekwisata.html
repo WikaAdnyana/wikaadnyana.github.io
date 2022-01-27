@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANDI TEBING TEGALLINGGAH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+<script>
+$( function() {
+    $("#dialog1").dialog({
+		autoOpen:false,
+        minWidth: 600,
+		show:'blind',
+		hide:'blind'
+	    });
+	$('#video').click(function(){
+		$('#dialog1').dialog('open');
+		return false;
+	});
+
+    $("#dialog2").dialog({
+		autoOpen:false,
+        minWidth: 650,
+		show:'blind',
+		hide:'blind'
+	    });
+	$('#lokasi').click(function(){
+		$('#dialog2').dialog('open');
+		return false;
+	});
+
+} );
+    
+</script>
+</head>
+<Body>
+    <div class="container-fluid">
+    <header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark shadow" aria-label="Main navigation" style="background: linear-gradient(to right, red, yellow);">
+      <div class="container-fluid">
+        <img src="candi.png" alt="" style="width: 30px; margin-right: 10px;">
+        <a class="navbar-brand" href="#" style="color: yellow;">CANDI TEBING TEGALLINGGAH</a>
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ms-auto mb-2 mr-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/home.html">
+                <button type="button" class="btn btn-outline-light">Home</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/objekwisata.html">
+                <button type="button" class="btn btn-outline-light">Objek Wisata</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/sarana.html">
+                <button type="button" class="btn btn-outline-light">Sarana Akomodasi</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/uasdesainweb/wawasan.html">
+                <button type="button" class="btn btn-outline-light">Wawasan</button></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Cari</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>
+<main>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="color: yellow; text-shadow: 0px 0px 20px #000000;">CANDI TEBING TEGALLINGGAH</h4>
+              <p style="text-shadow: 0px 0px 20px #000000;">Nikmati Perjalanan Wisata Sejarah dengan Pemandangan Alam yang Menawan</p>
+              <button id="video" type="button" class="btn btn-success">Video</button>
+              <button id="lokasi" type="button" class="btn btn-warning">Lokasi</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="color: yellow; text-shadow: 0px 0px 20px #000000;">SPOT FOTO</h4>
+              <p style="text-shadow: 0px 0px 20px #000000;">Nikmati Spot Foto yang Instagramable dan Bertemakan Alam</p>
+              <button id="video" type="button" class="btn btn-success">Video</button>
+              <button id="lokasi" type="button" class="btn btn-warning">Lokasi</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="4.jpg" class="d-block w-100" alt="..." width="100px">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 style="color: yellow; text-shadow: 0px 0px 20px #000000;">JALUR TRACKING</h4>
+              <p style="text-shadow: 0px 0px 20px #000000;">Nikmati Jalur Perjalanan Yang Hijau Dan Memanjakan Mata</p>
+              <button id="video" type="button" class="btn btn-success">Video</button>
+              <button id="lokasi" type="button" class="btn btn-warning">Lokasi</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+<section>
+    <div id="dialog1" title="VIDEO">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm3kbwDOEN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</section>
+<section>
+    <div id="dialog2" title="LOKASI">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.823456248773!2d115.30365179938997!3d-8.52780110850798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd21690a2ca2f4f%3A0x45bca6214d30c23!2sTegallingah%20Cliff%20Temple!5e0!3m2!1sen!2sid!4v1643207368203!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+</section>
+
+<div class="container-fluid" style="background: linear-gradient(to right, red, yellow); border-radius: 15px; margin-top: 50px;">
+  <h1 id="sarana" class="display-4" style="text-align:center; color: #F3F4F5; background: linear-gradient(to right, red, yellow); border-radius: 15px; ">
+      OBJEK WISATA
+  </h1>
+</div>
+  <div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+    <div style="background: #ffffff; padding: 5px;">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>CANDI TEBING</h2>
+          <p class="lead">
+            Candi Tebing Tegallingah ditemukan oleh seorang berkebangsaan Belanda bernama Krijsman. 
+            Kala itu ia menggali sebuah bangunan kecil yang nampak seperti gapura biasa. 
+            Sayangnya, hingga kini belum ada yang bisa memastikan kapan tepatnya candi ini dibangun. 
+          </p>
+          <a href="#" class="btn btn-primary">View More</a><br>
+          <br>
+          <h3>Follow Me On The Website</h3>
+            <a href="#" class="btn btn-primary">Facebook</a>
+            <a href="#" class="btn btn-success">Twitter</a>
+            <a href="#" class="btn btn-warning">Youtube</a>
+        </div>
+        <div class="col-md-6">
+          <figure>
+            <br>
+            <img src="5.jpg" width="100%" class="img-fluid">
+            <figcaption style="text-align:center;">Gambar Candi</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+    <div style="background: #ffffff; padding: 5px;">
+      <div class="row">
+        <div class="col-md-6">
+          <figure>
+            <br>
+            <img src="6.jpg" width="100%" class="img-fluid">
+            <figcaption style="text-align:center;">Gambar Pancuran</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <h2>PANCURAN</h2>
+          <p class="lead">
+            Kompleks Candi Tebing Tegallinggah terdiri dari dua bangunan candi Utama. 
+            Terdapat beberapa Pancuran air di kedua bangunan candi tersebut. 
+            Lokasi ini juga kerap digunakan umat Hindu setempat untuk melakukan ritual melukat alias 
+            pembersihan/penyucian diri. Mereka biasanya akan membasuh tubuh di tempat pancuran yang 
+            dipercaya mengeluarkan air suci.
+          </p>
+          <a href="#" class="btn btn-primary">View More</a><br>
+          <br>
+          <h3>Follow Me On The Website</h3>
+          <a href="#" class="btn btn-primary">Facebook</a>
+          <a href="#" class="btn btn-success">Twitter</a>
+          <a href="#" class="btn btn-warning">Youtube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div style="background: linear-gradient(to right, red, purple); padding: 5px;">
+    <div style="background: #ffffff; padding: 5px;">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>ARUNG JERAM</h2>
+          <p class="lead">
+            Salah satu aktivitas liburan di air yang paling di minati wisatawan 
+            baik wisatawan mancanegara ataupun wisatawan domestik 
+            adalah aktivitas Arung Jeram. Begitu banyaknya peminat aktivitas 
+            arung jeram karena banyak hal. Seperti faktor keamanan dan keselamatan yang terjamin, 
+            faktor pelayanan dan karakter sungai yang sangat cocok untuk peserta pemula.
+          </p>
+          <a href="#" class="btn btn-primary">View More</a><br>
+          <br>
+          <h3>Follow Me On The Website</h3>
+            <a href="#" class="btn btn-primary">Facebook</a>
+            <a href="#" class="btn btn-success">Twitter</a>
+            <a href="#" class="btn btn-warning">Youtube</a>
+        </div>
+        <div class="col-md-6">
+          <figure>
+            <br>
+            <img src="7.jpg" width="100%" class="img-fluid">
+            <figcaption style="text-align:center;">Gambar Arung Jeram</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+
+</div>
+</main>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="background: linear-gradient(to right, red, yellow);">
+  <path fill="#ffffff" fill-opacity="1" d="M0,192L30,176C60,160,120,128,180,138.7C240,149,300,203,360,224C420,245,480,235,540,208C600,181,660,139,720,144C780,149,840,203,900,234.7C960,267,1020,277,1080,250.7C1140,224,1200,160,1260,154.7C1320,149,1380,203,1410,229.3L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+<footer class="py-3" style="background: linear-gradient(to right, red, yellow);">
+<ul class="nav justify-content-center pb-3" style="color: #FFFFFF;">
+  <li class="nav-item"><a href="/uasdesainweb/home.html" class="nav-link px-2" style="color: white;">Home</a></li>
+  <li class="nav-item"><a href="/uasdesainweb/objekwisata.html" class="nav-link px-2" style="color: white;">Objek Wisata</a></li>
+  <li class="nav-item"><a href="/uasdesainweb/sarana.html" class="nav-link px-2" style="color: white;">Sarana Akomodasi</a></li>
+  <li class="nav-item"><a href="/uasdesainweb/wawasan.html" class="nav-link px-2" style="color: white;">Wawasan </a></li>
+</ul>
+<p class="text-center" style="color: white;">Copyright ©2021 Desain Web</p>
+<p class="text-center" style="color: white;">20101157 - I Wayan Wika Adnyana - BE</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
